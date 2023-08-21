@@ -1,0 +1,183 @@
+css
+/* 
+Grid
+Parent
+display: grid | inline-grid
+grid-template-column => [Number of columns in] => [px, %,fr, repeat(), mix]
+  NB: auto is shy(width of the content) and fr is greedy
+grid-template-rows => [Number of row height in] => [px, %,fr, repeat(), mix]
+column-gap => space between columns
+row-gap => space between rows
+NB: you can play with position by using justify-content & align-content (Flex)
+grid-template-areas: "First column" "second column" "Third column"
+
+Children
+-grid-area (it works only with grid-template-areas and you should the same name
+ you put on grid-template-areas "same name")
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    height: 300vh;
+    background-color: #ffffff;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 120px 180px 120px 180px;
+    grid-template-rows:  160px 100px 160px 160px;
+    width: 100%;
+    gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+.page div{
+    border: 1px solid #5e5e5e;
+}
+.page img{
+    width: 100%;
+    height: 100%;
+}
+.page-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-5 {
+    background-color: rgb(57, 57, 255);
+}
+
+.page .page-7 video{
+    width: 100%;
+    height: 100%;
+}
+.page-1 {
+    grid-row: 2 span;
+}
+.page-3 {
+    background-color:#591cf2 ;
+}
+.page-5 {
+    background-color:#1c95f2 ;
+}
+.page-6 {
+    background-color: #807f8f;
+}
+
+.page-5 {
+    grid-column: 2 span;
+}
+.page-9 {
+    grid-row: 2 span;
+}
+.page-11 {
+    width: 150%;
+}
+
+.page-12 {
+    width: 65%;
+    margin-left: auto;
+}
+
+.page-12 {
+    background-color: rgb(246, 255, 0);
+}
+.page-13 {
+    background-color: #c7facf;
+}
+
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 50px;
+    background-color: #0e0c1b;
+    position: fixed;
+    
+}
+
+.icon1 ,.icon2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.PUSH ,.num{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: 100;
+}
+
+.page-13 {
+    background-image: url(with-2.jpg);
+    background-size: 100% 100%;
+}
+
+.page-1 {
+    background-image: url(height1.jpg);
+    background-size: 100% 100%;
+}
+.page-2 {
+    background-image: url(with1.jpg);
+    background-size: 100% 100%;
+}
+.page-4 {
+    background-image: url(with1.jpg);
+    background-size: 100% 100%;
+}
+.page-7 {
+    background-image: url(height2.jpg);
+    background-size: 100% 100%;
+}
+.page-8 {
+    background-image: url(with-2.jpg);
+    background-size: 100% 100%;
+}
+.page-9 {
+    background-image: url(height1.jpg);
+    background-size: 100% 100%;
+}
+.page-11 {
+    background-image: url(height1.jpg);
+    background-size: 100% 100%;
+}
+
+
+@media screen and (max-width: 660px) {
+    .page div{
+        width: 70%;
+        height: 40%;
+    }
+    .page {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

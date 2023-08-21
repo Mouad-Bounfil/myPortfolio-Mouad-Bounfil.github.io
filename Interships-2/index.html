@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <!-- section title -->
+            <!-- testimontal wrapper --> 
+            <div class="swiper testimonial-wrapper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-item swiper-slide">
+                        <div class="thumb">
+                            <img src="Picture-11-1.jpg" style="width: 50%; height: 300px; border-radius: 1%; text-align: center;" alt="">
+                        </div>
+                        <h3></h3>
+                        <div class="comment">
+                            <strong>Objectif de la plateforme :</strong> <br>
+                            L’objectif de mon travail consiste à développer une application permettant la reconnaissance des visages des employés à partir d’une séquence vidéo. L’entrée de mon application est une séquence vidéo. La sortie est une liste des employés absents qui sera déterminée en comparant les caractéristiques des visages extraits de la base de données avec celle qui existe dans la séquence vidéo. Tout d’abord, on décompose la vidéo en un ensemble d’images. Ensuite, à partir de cet ensemble on cherche le meilleur choix qui correspond à l’image dans laquelle l’algorithme de recherche a détecté le maximum des objets morphologiques du visage (les deux yeux, le nez et la bouche) puis on calcule les distances caractéristiques et on les compare avec celles des images de la base de données afin d’obtenir un score de ressemblance, ce dernier on le compare à un seuil déjà fixé pour vérifier l’existence de la personne recherchée dans la base de données. Principe de fonctionnement de base d’un système de reconnaissance faciale L’application que je vais développer doit prendre en considération des besoins fournis en entrée. Dans ce qui suit, je vais déceler les différents besoins fonctionnels et non fonctionnels que mon application doit satisfaire.
+                        </div>
+
+                    </div>
+                    <!-- testimonial item -->
+                    <div class="testimonial-item swiper-slide">
+                        <div class="thumb">
+                            <img src="Picture1.png" style="width: 100%; height: 500px; border-radius: 1%;" alt="">
+                        </div>
+                        <h3>Menu principale</h3>
+                        <div class="comment">Cette interface présente le menu principal de l’application</div>
+
+                    </div>
+                    <!-- testimonial item -->
+                    <div class="testimonial-item swiper-slide">
+                        <div class="thumb">
+                            <img src="Picture2.png" style="width: 100%; height: 500px; border-radius: 1%;" alt="">
+                        </div>
+                        <h3>Ajout des employés</h3>
+                        <div class="comment">-Premièrement le superviseur va entrer l’id, le nom et le prénom et le CIN et le poste de travail et d’employés à ajouter puis l’employé va mettre son visage devant la caméra pour que l’application détectera son visage et ensuite elle va stocker cinquante photos dans la base de données <div class=""></div></div>
+                        
+                    </div>
+                    <!-- testimonial item -->
+                    <div class="testimonial-item swiper-slide">
+                        <div class="thumb">
+                            <img src="Picture3.png" style="width: 100%; height: 500px; border-radius: 1%;" alt="">
+                        </div>
+                        <h3>Reconnaissance faciale</h3>
+                        <div class="comment">Chaque employé va voir son visage encadré par un cadre avec son nom si il est reconnais par l’application si il n’est pas reconnais il va voir le mot « unknown» au lieu de son nom.</div>
+                        
+                    </div>
+                    <!-- testimonial item -->
+                    <div class="testimonial-item swiper-slide">
+                        <div class="thumb">
+                            <img src="Picture4.png" style="width: 100%; height: 500px; border-radius: 1%;" alt="">
+                        </div>
+                        <h3>L’interface de consultation d’un client</h3>
+                        <div class="comment">Exemple d’une deux personne qui existe dans la base de données </div>
+                        
+                    </div>
+                    <!-- testimonial item -->
+                    <div class="testimonial-item swiper-slide">
+                        <div class="thumb">
+                            <img src="Picture5.png" style="width: 100%; height: 500px; border-radius: 1%;" alt="">
+                        </div>
+                        <h3>Afficher Liste de présence (absence) </h3>
+                        <div class="comment">Si l’ employé n’a pas met son visage devant la caméra son nom va être enregistré dans la base de données des employés absents et ce bouton va l’afficher avec la date .</div>
+                        
+                    </div>
+
+                </div> 
+                <div class="swiper-pagination">
+
+                </div>
+            </div>        
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!--=============== JS ===============-->
+    <script src="main.js"></script>
+</body>
+</html>

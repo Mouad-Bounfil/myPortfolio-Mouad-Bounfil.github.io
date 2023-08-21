@@ -1,0 +1,58 @@
+css
+/* 
+Grid
+Parent
+display: grid | inline-grid
+grid-template-column => [Number of columns in] => [px, %,fr, repeat(), mix]
+  NB: auto is shy(width of the content) and fr is greedy
+grid-template-rows => [Number of row height in] => [px, %,fr, repeat(), mix]
+column-gap => space between columns
+row-gap => space between rows
+NB: you can play with position by using justify-content & align-content (Flex)
+grid-template-areas: "First column" "second column" "Third column"
+
+Children
+-grid-area (it works only with grid-template-areas and you should the same name
+ you put on grid-template-areas "same name")
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav " 
+    "cont cont cont cont cont cont cont cont side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2 {
+    grid-area: logo;
+    background-color: red;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+}
+
+section {
+    grid-area: cont;
+    background-color: yellow;
+}
+
+aside {
+    grid-area: side;
+    background-color: green;
+}
+
+footer {
+    grid-area: foot;
+    background-color: blueviolet;
+}
